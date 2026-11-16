@@ -1,0 +1,12 @@
+{
+  "disease": "heart_disease",
+  "dataset": "heart_disease.csv",
+  "training_configuration": {
+    "random_state": 42,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15,
+    "cross_validation_folds": 3,
+    "test_set_used_for_tuning_or_selection": false
+  }
+}

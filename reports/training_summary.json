@@ -1,0 +1,668 @@
+[
+  {
+    "disease": "breast_cancer",
+    "best_model_validation_rank": "logistic_regression",
+    "results": {
+      "logistic_regression": {
+        "threshold": 0.5247049694664413,
+        "best_parameters": {
+          "classifier__C": 0.1,
+          "classifier__class_weight": null
+        },
+        "best_cv_roc_auc": 0.9927038767314155,
+        "validation_metrics": {
+          "accuracy": 0.9882352941176471,
+          "precision": 1.0,
+          "recall_sensitivity": 0.96875,
+          "specificity": 1.0,
+          "f1": 0.9841269841269841,
+          "roc_auc": 0.9976415094339622,
+          "balanced_accuracy": 0.984375
+        },
+        "test_metrics": {
+          "accuracy": 0.9883720930232558,
+          "precision": 1.0,
+          "recall_sensitivity": 0.96875,
+          "specificity": 1.0,
+          "f1": 0.9841269841269841,
+          "roc_auc": 1.0,
+          "balanced_accuracy": 0.984375
+        },
+        "confusion_matrix": [
+          [
+            54,
+            0
+          ],
+          [
+            1,
+            31
+          ]
+        ],
+        "classification_report": {
+          "Benign class predicted": {
+            "precision": 0.9818181818181818,
+            "recall": 1.0,
+            "f1-score": 0.9908256880733946,
+            "support": 54.0
+          },
+          "Malignant class predicted": {
+            "precision": 1.0,
+            "recall": 0.96875,
+            "f1-score": 0.9841269841269841,
+            "support": 32.0
+          },
+          "accuracy": 0.9883720930232558,
+          "macro avg": {
+            "precision": 0.990909090909091,
+            "recall": 0.984375,
+            "f1-score": 0.9874763361001893,
+            "support": 86.0
+          },
+          "weighted avg": {
+            "precision": 0.9885835095137421,
+            "recall": 0.9883720930232558,
+            "f1-score": 0.9883331470700791,
+            "support": 86.0
+          }
+        },
+        "training_preprocessing": {
+          "scaled_numeric_features": true,
+          "categorical_features": []
+        },
+        "validation_average_rank": 1.6
+      },
+      "random_forest": {
+        "threshold": 0.43179279979279983,
+        "best_parameters": {
+          "classifier__class_weight": null,
+          "classifier__max_depth": 8,
+          "classifier__min_samples_leaf": 1
+        },
+        "best_cv_roc_auc": 0.9836817434948736,
+        "validation_metrics": {
+          "accuracy": 0.9764705882352941,
+          "precision": 1.0,
+          "recall_sensitivity": 0.9375,
+          "specificity": 1.0,
+          "f1": 0.967741935483871,
+          "roc_auc": 0.9941037735849056,
+          "balanced_accuracy": 0.96875
+        },
+        "test_metrics": {
+          "accuracy": 0.9883720930232558,
+          "precision": 1.0,
+          "recall_sensitivity": 0.96875,
+          "specificity": 1.0,
+          "f1": 0.9841269841269841,
+          "roc_auc": 0.9976851851851851,
+          "balanced_accuracy": 0.984375
+        },
+        "confusion_matrix": [
+          [
+            54,
+            0
+          ],
+          [
+            1,
+            31
+          ]
+        ],
+        "classification_report": {
+          "Benign class predicted": {
+            "precision": 0.9818181818181818,
+            "recall": 1.0,
+            "f1-score": 0.9908256880733946,
+            "support": 54.0
+          },
+          "Malignant class predicted": {
+            "precision": 1.0,
+            "recall": 0.96875,
+            "f1-score": 0.9841269841269841,
+            "support": 32.0
+          },
+          "accuracy": 0.9883720930232558,
+          "macro avg": {
+            "precision": 0.990909090909091,
+            "recall": 0.984375,
+            "f1-score": 0.9874763361001893,
+            "support": 86.0
+          },
+          "weighted avg": {
+            "precision": 0.9885835095137421,
+            "recall": 0.9883720930232558,
+            "f1-score": 0.9883331470700791,
+            "support": 86.0
+          }
+        },
+        "training_preprocessing": {
+          "scaled_numeric_features": false,
+          "categorical_features": []
+        },
+        "validation_average_rank": 2.6
+      },
+      "svm": {
+        "threshold": 0.4846684981017978,
+        "best_parameters": {
+          "classifier__C": 1.0,
+          "classifier__class_weight": null,
+          "classifier__kernel": "rbf"
+        },
+        "best_cv_roc_auc": 0.9921928335304289,
+        "validation_metrics": {
+          "accuracy": 0.9882352941176471,
+          "precision": 1.0,
+          "recall_sensitivity": 0.96875,
+          "specificity": 1.0,
+          "f1": 0.9841269841269841,
+          "roc_auc": 0.995872641509434,
+          "balanced_accuracy": 0.984375
+        },
+        "test_metrics": {
+          "accuracy": 0.9767441860465116,
+          "precision": 1.0,
+          "recall_sensitivity": 0.9375,
+          "specificity": 1.0,
+          "f1": 0.967741935483871,
+          "roc_auc": 1.0,
+          "balanced_accuracy": 0.96875
+        },
+        "confusion_matrix": [
+          [
+            54,
+            0
+          ],
+          [
+            2,
+            30
+          ]
+        ],
+        "classification_report": {
+          "Benign class predicted": {
+            "precision": 0.9642857142857143,
+            "recall": 1.0,
+            "f1-score": 0.9818181818181818,
+            "support": 54.0
+          },
+          "Malignant class predicted": {
+            "precision": 1.0,
+            "recall": 0.9375,
+            "f1-score": 0.967741935483871,
+            "support": 32.0
+          },
+          "accuracy": 0.9767441860465116,
+          "macro avg": {
+            "precision": 0.9821428571428572,
+            "recall": 0.96875,
+            "f1-score": 0.9747800586510265,
+            "support": 86.0
+          },
+          "weighted avg": {
+            "precision": 0.9775747508305648,
+            "recall": 0.9767441860465116,
+            "f1-score": 0.9765805087635545,
+            "support": 86.0
+          }
+        },
+        "training_preprocessing": {
+          "scaled_numeric_features": true,
+          "categorical_features": []
+        },
+        "validation_average_rank": 1.8
+      }
+    },
+    "report_dir": "C:\\Users\\HP\\OneDrive\\Desktop\\healthcare\\reports\\breast_cancer"
+  },
+  {
+    "disease": "heart_disease",
+    "best_model_validation_rank": "logistic_regression",
+    "results": {
+      "logistic_regression": {
+        "threshold": 0.45299646475115557,
+        "best_parameters": {
+          "classifier__C": 0.1,
+          "classifier__class_weight": "balanced"
+        },
+        "best_cv_roc_auc": 0.8944946683433526,
+        "validation_metrics": {
+          "accuracy": 0.8666666666666667,
+          "precision": 0.8260869565217391,
+          "recall_sensitivity": 0.9047619047619048,
+          "specificity": 0.8333333333333334,
+          "f1": 0.8636363636363636,
+          "roc_auc": 0.9325396825396826,
+          "balanced_accuracy": 0.8690476190476191
+        },
+        "test_metrics": {
+          "accuracy": 0.8478260869565217,
+          "precision": 0.7916666666666666,
+          "recall_sensitivity": 0.9047619047619048,
+          "specificity": 0.8,
+          "f1": 0.8444444444444444,
+          "roc_auc": 0.9542857142857143,
+          "balanced_accuracy": 0.8523809523809525
+        },
+        "confusion_matrix": [
+          [
+            20,
+            5
+          ],
+          [
+            2,
+            19
+          ]
+        ],
+        "classification_report": {
+          "No-disease class predicted": {
+            "precision": 0.9090909090909091,
+            "recall": 0.8,
+            "f1-score": 0.851063829787234,
+            "support": 25.0
+          },
+          "Disease-present class predicted": {
+            "precision": 0.7916666666666666,
+            "recall": 0.9047619047619048,
+            "f1-score": 0.8444444444444444,
+            "support": 21.0
+          },
+          "accuracy": 0.8478260869565217,
+          "macro avg": {
+            "precision": 0.8503787878787878,
+            "recall": 0.8523809523809525,
+            "f1-score": 0.8477541371158392,
+            "support": 46.0
+          },
+          "weighted avg": {
+            "precision": 0.8554841897233202,
+            "recall": 0.8478260869565217,
+            "f1-score": 0.8480419364785692,
+            "support": 46.0
+          }
+        },
+        "training_preprocessing": {
+          "scaled_numeric_features": true,
+          "categorical_features": [
+            "sex",
+            "cp",
+            "fbs",
+            "restecg",
+            "exang",
+            "slope",
+            "ca",
+            "thal"
+          ]
+        },
+        "validation_average_rank": 1.5
+      },
+      "random_forest": {
+        "threshold": 0.43405257853443885,
+        "best_parameters": {
+          "classifier__class_weight": "balanced",
+          "classifier__max_depth": 8,
+          "classifier__min_samples_leaf": 1
+        },
+        "best_cv_roc_auc": 0.8946777363718154,
+        "validation_metrics": {
+          "accuracy": 0.8,
+          "precision": 0.7307692307692307,
+          "recall_sensitivity": 0.9047619047619048,
+          "specificity": 0.7083333333333334,
+          "f1": 0.8085106382978723,
+          "roc_auc": 0.871031746031746,
+          "balanced_accuracy": 0.8065476190476191
+        },
+        "test_metrics": {
+          "accuracy": 0.8478260869565217,
+          "precision": 0.7692307692307693,
+          "recall_sensitivity": 0.9523809523809523,
+          "specificity": 0.76,
+          "f1": 0.851063829787234,
+          "roc_auc": 0.9657142857142857,
+          "balanced_accuracy": 0.8561904761904762
+        },
+        "confusion_matrix": [
+          [
+            19,
+            6
+          ],
+          [
+            1,
+            20
+          ]
+        ],
+        "classification_report": {
+          "No-disease class predicted": {
+            "precision": 0.95,
+            "recall": 0.76,
+            "f1-score": 0.8444444444444444,
+            "support": 25.0
+          },
+          "Disease-present class predicted": {
+            "precision": 0.7692307692307693,
+            "recall": 0.9523809523809523,
+            "f1-score": 0.851063829787234,
+            "support": 21.0
+          },
+          "accuracy": 0.8478260869565217,
+          "macro avg": {
+            "precision": 0.8596153846153847,
+            "recall": 0.8561904761904762,
+            "f1-score": 0.8477541371158392,
+            "support": 46.0
+          },
+          "weighted avg": {
+            "precision": 0.8674749163879598,
+            "recall": 0.8478260869565217,
+            "f1-score": 0.8474663377531094,
+            "support": 46.0
+          }
+        },
+        "training_preprocessing": {
+          "scaled_numeric_features": false,
+          "categorical_features": [
+            "sex",
+            "cp",
+            "fbs",
+            "restecg",
+            "exang",
+            "slope",
+            "ca",
+            "thal"
+          ]
+        },
+        "validation_average_rank": 2.7
+      },
+      "svm": {
+        "threshold": 0.5495337522175608,
+        "best_parameters": {
+          "classifier__C": 0.5,
+          "classifier__class_weight": "balanced",
+          "classifier__kernel": "rbf"
+        },
+        "best_cv_roc_auc": 0.8901770743876009,
+        "validation_metrics": {
+          "accuracy": 0.8666666666666667,
+          "precision": 0.8947368421052632,
+          "recall_sensitivity": 0.8095238095238095,
+          "specificity": 0.9166666666666666,
+          "f1": 0.85,
+          "roc_auc": 0.9126984126984127,
+          "balanced_accuracy": 0.8630952380952381
+        },
+        "test_metrics": {
+          "accuracy": 0.8695652173913043,
+          "precision": 0.8260869565217391,
+          "recall_sensitivity": 0.9047619047619048,
+          "specificity": 0.84,
+          "f1": 0.8636363636363636,
+          "roc_auc": 0.9447619047619047,
+          "balanced_accuracy": 0.8723809523809524
+        },
+        "confusion_matrix": [
+          [
+            21,
+            4
+          ],
+          [
+            2,
+            19
+          ]
+        ],
+        "classification_report": {
+          "No-disease class predicted": {
+            "precision": 0.9130434782608695,
+            "recall": 0.84,
+            "f1-score": 0.875,
+            "support": 25.0
+          },
+          "Disease-present class predicted": {
+            "precision": 0.8260869565217391,
+            "recall": 0.9047619047619048,
+            "f1-score": 0.8636363636363636,
+            "support": 21.0
+          },
+          "accuracy": 0.8695652173913043,
+          "macro avg": {
+            "precision": 0.8695652173913043,
+            "recall": 0.8723809523809524,
+            "f1-score": 0.8693181818181819,
+            "support": 46.0
+          },
+          "weighted avg": {
+            "precision": 0.8733459357277884,
+            "recall": 0.8695652173913043,
+            "f1-score": 0.869812252964427,
+            "support": 46.0
+          }
+        },
+        "training_preprocessing": {
+          "scaled_numeric_features": true,
+          "categorical_features": [
+            "sex",
+            "cp",
+            "fbs",
+            "restecg",
+            "exang",
+            "slope",
+            "ca",
+            "thal"
+          ]
+        },
+        "validation_average_rank": 1.8
+      }
+    },
+    "report_dir": "C:\\Users\\HP\\OneDrive\\Desktop\\healthcare\\reports\\heart_disease"
+  },
+  {
+    "disease": "diabetes",
+    "best_model_validation_rank": "random_forest",
+    "results": {
+      "logistic_regression": {
+        "threshold": 0.3125219800308108,
+        "best_parameters": {
+          "classifier__C": 0.1,
+          "classifier__class_weight": "balanced"
+        },
+        "best_cv_roc_auc": 0.8328301287144445,
+        "validation_metrics": {
+          "accuracy": 0.7043478260869566,
+          "precision": 0.5416666666666666,
+          "recall_sensitivity": 0.975,
+          "specificity": 0.56,
+          "f1": 0.6964285714285714,
+          "roc_auc": 0.806,
+          "balanced_accuracy": 0.7675000000000001
+        },
+        "test_metrics": {
+          "accuracy": 0.7586206896551724,
+          "precision": 0.6065573770491803,
+          "recall_sensitivity": 0.9024390243902439,
+          "specificity": 0.68,
+          "f1": 0.7254901960784313,
+          "roc_auc": 0.8669918699186991,
+          "balanced_accuracy": 0.791219512195122
+        },
+        "confusion_matrix": [
+          [
+            51,
+            24
+          ],
+          [
+            4,
+            37
+          ]
+        ],
+        "classification_report": {
+          "No-diabetes class predicted": {
+            "precision": 0.9272727272727272,
+            "recall": 0.68,
+            "f1-score": 0.7846153846153846,
+            "support": 75.0
+          },
+          "Diabetes class predicted": {
+            "precision": 0.6065573770491803,
+            "recall": 0.9024390243902439,
+            "f1-score": 0.7254901960784313,
+            "support": 41.0
+          },
+          "accuracy": 0.7586206896551724,
+          "macro avg": {
+            "precision": 0.7669150521609538,
+            "recall": 0.791219512195122,
+            "f1-score": 0.755052790346908,
+            "support": 116.0
+          },
+          "weighted avg": {
+            "precision": 0.813916439693715,
+            "recall": 0.7586206896551724,
+            "f1-score": 0.7637176886669788,
+            "support": 116.0
+          }
+        },
+        "training_preprocessing": {
+          "scaled_numeric_features": true,
+          "categorical_features": []
+        },
+        "validation_average_rank": 2.3
+      },
+      "random_forest": {
+        "threshold": 0.2918489710832723,
+        "best_parameters": {
+          "classifier__class_weight": "balanced",
+          "classifier__max_depth": 8,
+          "classifier__min_samples_leaf": 3
+        },
+        "best_cv_roc_auc": 0.824373552126611,
+        "validation_metrics": {
+          "accuracy": 0.7478260869565218,
+          "precision": 0.582089552238806,
+          "recall_sensitivity": 0.975,
+          "specificity": 0.6266666666666667,
+          "f1": 0.7289719626168224,
+          "roc_auc": 0.8333333333333334,
+          "balanced_accuracy": 0.8008333333333333
+        },
+        "test_metrics": {
+          "accuracy": 0.75,
+          "precision": 0.6071428571428571,
+          "recall_sensitivity": 0.8292682926829268,
+          "specificity": 0.7066666666666667,
+          "f1": 0.7010309278350515,
+          "roc_auc": 0.8445528455284553,
+          "balanced_accuracy": 0.7679674796747967
+        },
+        "confusion_matrix": [
+          [
+            53,
+            22
+          ],
+          [
+            7,
+            34
+          ]
+        ],
+        "classification_report": {
+          "No-diabetes class predicted": {
+            "precision": 0.8833333333333333,
+            "recall": 0.7066666666666667,
+            "f1-score": 0.7851851851851852,
+            "support": 75.0
+          },
+          "Diabetes class predicted": {
+            "precision": 0.6071428571428571,
+            "recall": 0.8292682926829268,
+            "f1-score": 0.7010309278350515,
+            "support": 41.0
+          },
+          "accuracy": 0.75,
+          "macro avg": {
+            "precision": 0.7452380952380953,
+            "recall": 0.7679674796747967,
+            "f1-score": 0.7431080565101184,
+            "support": 116.0
+          },
+          "weighted avg": {
+            "precision": 0.7857142857142857,
+            "recall": 0.75,
+            "f1-score": 0.7554410080183276,
+            "support": 116.0
+          }
+        },
+        "training_preprocessing": {
+          "scaled_numeric_features": false,
+          "categorical_features": []
+        },
+        "validation_average_rank": 1.2
+      },
+      "svm": {
+        "threshold": 0.19132013469258832,
+        "best_parameters": {
+          "classifier__C": 1.0,
+          "classifier__class_weight": null,
+          "classifier__kernel": "linear"
+        },
+        "best_cv_roc_auc": 0.8319601030946971,
+        "validation_metrics": {
+          "accuracy": 0.7043478260869566,
+          "precision": 0.5416666666666666,
+          "recall_sensitivity": 0.975,
+          "specificity": 0.56,
+          "f1": 0.6964285714285714,
+          "roc_auc": 0.8056666666666666,
+          "balanced_accuracy": 0.7675000000000001
+        },
+        "test_metrics": {
+          "accuracy": 0.7413793103448276,
+          "precision": 0.5932203389830508,
+          "recall_sensitivity": 0.8536585365853658,
+          "specificity": 0.68,
+          "f1": 0.7,
+          "roc_auc": 0.8617886178861789,
+          "balanced_accuracy": 0.7668292682926829
+        },
+        "confusion_matrix": [
+          [
+            51,
+            24
+          ],
+          [
+            6,
+            35
+          ]
+        ],
+        "classification_report": {
+          "No-diabetes class predicted": {
+            "precision": 0.8947368421052632,
+            "recall": 0.68,
+            "f1-score": 0.7727272727272727,
+            "support": 75.0
+          },
+          "Diabetes class predicted": {
+            "precision": 0.5932203389830508,
+            "recall": 0.8536585365853658,
+            "f1-score": 0.7,
+            "support": 41.0
+          },
+          "accuracy": 0.7413793103448276,
+          "macro avg": {
+            "precision": 0.7439785905441569,
+            "recall": 0.7668292682926829,
+            "f1-score": 0.7363636363636363,
+            "support": 116.0
+          },
+          "weighted avg": {
+            "precision": 0.788166353932757,
+            "recall": 0.7413793103448276,
+            "f1-score": 0.7470219435736677,
+            "support": 116.0
+          }
+        },
+        "training_preprocessing": {
+          "scaled_numeric_features": true,
+          "categorical_features": []
+        },
+        "validation_average_rank": 2.5
+      }
+    },
+    "report_dir": "C:\\Users\\HP\\OneDrive\\Desktop\\healthcare\\reports\\diabetes"
+  }
+]

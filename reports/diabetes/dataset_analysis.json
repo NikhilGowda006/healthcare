@@ -1,0 +1,128 @@
+{
+  "disease": "diabetes",
+  "shape": [
+    768,
+    9
+  ],
+  "columns": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age",
+    "Outcome"
+  ],
+  "dtypes": {
+    "Pregnancies": "int64",
+    "Glucose": "float64",
+    "BloodPressure": "float64",
+    "SkinThickness": "float64",
+    "Insulin": "float64",
+    "BMI": "float64",
+    "DiabetesPedigreeFunction": "float64",
+    "Age": "int64",
+    "Outcome": "int64"
+  },
+  "missing_values": {
+    "Pregnancies": 0,
+    "Glucose": 5,
+    "BloodPressure": 35,
+    "SkinThickness": 227,
+    "Insulin": 374,
+    "BMI": 11,
+    "DiabetesPedigreeFunction": 0,
+    "Age": 0,
+    "Outcome": 0
+  },
+  "duplicate_rows": 0,
+  "class_distribution": {
+    "0": 500,
+    "1": 268
+  },
+  "categorical_features": [],
+  "numeric_summary": {
+    "Pregnancies": {
+      "count": 768.0,
+      "mean": 3.8450520833333335,
+      "std": 3.3695780626988694,
+      "min": 0.0,
+      "25%": 1.0,
+      "50%": 3.0,
+      "75%": 6.0,
+      "max": 17.0
+    },
+    "Glucose": {
+      "count": 763.0,
+      "mean": 121.6867627785059,
+      "std": 30.53564107280403,
+      "min": 44.0,
+      "25%": 99.0,
+      "50%": 117.0,
+      "75%": 141.0,
+      "max": 199.0
+    },
+    "BloodPressure": {
+      "count": 733.0,
+      "mean": 72.40518417462484,
+      "std": 12.38215821010526,
+      "min": 24.0,
+      "25%": 64.0,
+      "50%": 72.0,
+      "75%": 80.0,
+      "max": 122.0
+    },
+    "SkinThickness": {
+      "count": 541.0,
+      "mean": 29.153419593345657,
+      "std": 10.476982369987208,
+      "min": 7.0,
+      "25%": 22.0,
+      "50%": 29.0,
+      "75%": 36.0,
+      "max": 99.0
+    },
+    "Insulin": {
+      "count": 394.0,
+      "mean": 155.5482233502538,
+      "std": 118.77585518724518,
+      "min": 14.0,
+      "25%": 76.25,
+      "50%": 125.0,
+      "75%": 190.0,
+      "max": 846.0
+    },
+    "BMI": {
+      "count": 757.0,
+      "mean": 32.457463672391015,
+      "std": 6.924988332105903,
+      "min": 18.2,
+      "25%": 27.5,
+      "50%": 32.3,
+      "75%": 36.6,
+      "max": 67.1
+    },
+    "DiabetesPedigreeFunction": {
+      "count": 768.0,
+      "mean": 0.47187630208333325,
+      "std": 0.3313285950127749,
+      "min": 0.078,
+      "25%": 0.24375,
+      "50%": 0.3725,
+      "75%": 0.62625,
+      "max": 2.42
+    },
+    "Age": {
+      "count": 768.0,
+      "mean": 33.240885416666664,
+      "std": 11.760231540678685,
+      "min": 21.0,
+      "25%": 24.0,
+      "50%": 29.0,
+      "75%": 41.0,
+      "max": 81.0
+    }
+  }
+}

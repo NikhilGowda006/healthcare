@@ -1,0 +1,275 @@
+{
+  "disease": "heart_disease",
+  "source": "UCI Heart Disease, Cleveland processed subset",
+  "source_url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "target": "num",
+  "positive_class": 1,
+  "negative_class": 0,
+  "class_mapping": {
+    "0": "No-disease class predicted",
+    "1": "Disease-present class predicted"
+  },
+  "split_sizes": {
+    "training": 212,
+    "validation": 45,
+    "testing": 46
+  },
+  "best_model_validation_rank": "logistic_regression",
+  "selection_metrics": [
+    "roc_auc",
+    "precision",
+    "recall_sensitivity",
+    "specificity",
+    "f1"
+  ],
+  "models": {
+    "logistic_regression": {
+      "threshold": 0.45299646475115557,
+      "best_parameters": {
+        "classifier__C": 0.1,
+        "classifier__class_weight": "balanced"
+      },
+      "best_cv_roc_auc": 0.8944946683433526,
+      "validation_metrics": {
+        "accuracy": 0.8666666666666667,
+        "precision": 0.8260869565217391,
+        "recall_sensitivity": 0.9047619047619048,
+        "specificity": 0.8333333333333334,
+        "f1": 0.8636363636363636,
+        "roc_auc": 0.9325396825396826,
+        "balanced_accuracy": 0.8690476190476191
+      },
+      "test_metrics": {
+        "accuracy": 0.8478260869565217,
+        "precision": 0.7916666666666666,
+        "recall_sensitivity": 0.9047619047619048,
+        "specificity": 0.8,
+        "f1": 0.8444444444444444,
+        "roc_auc": 0.9542857142857143,
+        "balanced_accuracy": 0.8523809523809525
+      },
+      "confusion_matrix": [
+        [
+          20,
+          5
+        ],
+        [
+          2,
+          19
+        ]
+      ],
+      "classification_report": {
+        "No-disease class predicted": {
+          "precision": 0.9090909090909091,
+          "recall": 0.8,
+          "f1-score": 0.851063829787234,
+          "support": 25.0
+        },
+        "Disease-present class predicted": {
+          "precision": 0.7916666666666666,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.8444444444444444,
+          "support": 21.0
+        },
+        "accuracy": 0.8478260869565217,
+        "macro avg": {
+          "precision": 0.8503787878787878,
+          "recall": 0.8523809523809525,
+          "f1-score": 0.8477541371158392,
+          "support": 46.0
+        },
+        "weighted avg": {
+          "precision": 0.8554841897233202,
+          "recall": 0.8478260869565217,
+          "f1-score": 0.8480419364785692,
+          "support": 46.0
+        }
+      },
+      "training_preprocessing": {
+        "scaled_numeric_features": true,
+        "categorical_features": [
+          "sex",
+          "cp",
+          "fbs",
+          "restecg",
+          "exang",
+          "slope",
+          "ca",
+          "thal"
+        ]
+      },
+      "validation_average_rank": 1.5
+    },
+    "random_forest": {
+      "threshold": 0.43405257853443885,
+      "best_parameters": {
+        "classifier__class_weight": "balanced",
+        "classifier__max_depth": 8,
+        "classifier__min_samples_leaf": 1
+      },
+      "best_cv_roc_auc": 0.8946777363718154,
+      "validation_metrics": {
+        "accuracy": 0.8,
+        "precision": 0.7307692307692307,
+        "recall_sensitivity": 0.9047619047619048,
+        "specificity": 0.7083333333333334,
+        "f1": 0.8085106382978723,
+        "roc_auc": 0.871031746031746,
+        "balanced_accuracy": 0.8065476190476191
+      },
+      "test_metrics": {
+        "accuracy": 0.8478260869565217,
+        "precision": 0.7692307692307693,
+        "recall_sensitivity": 0.9523809523809523,
+        "specificity": 0.76,
+        "f1": 0.851063829787234,
+        "roc_auc": 0.9657142857142857,
+        "balanced_accuracy": 0.8561904761904762
+      },
+      "confusion_matrix": [
+        [
+          19,
+          6
+        ],
+        [
+          1,
+          20
+        ]
+      ],
+      "classification_report": {
+        "No-disease class predicted": {
+          "precision": 0.95,
+          "recall": 0.76,
+          "f1-score": 0.8444444444444444,
+          "support": 25.0
+        },
+        "Disease-present class predicted": {
+          "precision": 0.7692307692307693,
+          "recall": 0.9523809523809523,
+          "f1-score": 0.851063829787234,
+          "support": 21.0
+        },
+        "accuracy": 0.8478260869565217,
+        "macro avg": {
+          "precision": 0.8596153846153847,
+          "recall": 0.8561904761904762,
+          "f1-score": 0.8477541371158392,
+          "support": 46.0
+        },
+        "weighted avg": {
+          "precision": 0.8674749163879598,
+          "recall": 0.8478260869565217,
+          "f1-score": 0.8474663377531094,
+          "support": 46.0
+        }
+      },
+      "training_preprocessing": {
+        "scaled_numeric_features": false,
+        "categorical_features": [
+          "sex",
+          "cp",
+          "fbs",
+          "restecg",
+          "exang",
+          "slope",
+          "ca",
+          "thal"
+        ]
+      },
+      "validation_average_rank": 2.7
+    },
+    "svm": {
+      "threshold": 0.5495337522175608,
+      "best_parameters": {
+        "classifier__C": 0.5,
+        "classifier__class_weight": "balanced",
+        "classifier__kernel": "rbf"
+      },
+      "best_cv_roc_auc": 0.8901770743876009,
+      "validation_metrics": {
+        "accuracy": 0.8666666666666667,
+        "precision": 0.8947368421052632,
+        "recall_sensitivity": 0.8095238095238095,
+        "specificity": 0.9166666666666666,
+        "f1": 0.85,
+        "roc_auc": 0.9126984126984127,
+        "balanced_accuracy": 0.8630952380952381
+      },
+      "test_metrics": {
+        "accuracy": 0.8695652173913043,
+        "precision": 0.8260869565217391,
+        "recall_sensitivity": 0.9047619047619048,
+        "specificity": 0.84,
+        "f1": 0.8636363636363636,
+        "roc_auc": 0.9447619047619047,
+        "balanced_accuracy": 0.8723809523809524
+      },
+      "confusion_matrix": [
+        [
+          21,
+          4
+        ],
+        [
+          2,
+          19
+        ]
+      ],
+      "classification_report": {
+        "No-disease class predicted": {
+          "precision": 0.9130434782608695,
+          "recall": 0.84,
+          "f1-score": 0.875,
+          "support": 25.0
+        },
+        "Disease-present class predicted": {
+          "precision": 0.8260869565217391,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.8636363636363636,
+          "support": 21.0
+        },
+        "accuracy": 0.8695652173913043,
+        "macro avg": {
+          "precision": 0.8695652173913043,
+          "recall": 0.8723809523809524,
+          "f1-score": 0.8693181818181819,
+          "support": 46.0
+        },
+        "weighted avg": {
+          "precision": 0.8733459357277884,
+          "recall": 0.8695652173913043,
+          "f1-score": 0.869812252964427,
+          "support": 46.0
+        }
+      },
+      "training_preprocessing": {
+        "scaled_numeric_features": true,
+        "categorical_features": [
+          "sex",
+          "cp",
+          "fbs",
+          "restecg",
+          "exang",
+          "slope",
+          "ca",
+          "thal"
+        ]
+      },
+      "validation_average_rank": 1.8
+    }
+  }
+}

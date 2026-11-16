@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HealthAI — Multi-Disease Prediction System
 
 An educational Streamlit project with a responsive top navigation interface for separate binary classifiers trained on the Wisconsin Diagnostic Breast Cancer, Cleveland Heart Disease, and Pima Indians Diabetes datasets. Each disease has its own schema, preprocessing pipeline, model artifacts, evaluation reports, and dashboard.
@@ -115,3 +116,7 @@ requirements.txt
 ## Limitations and disclaimer
 
 The source datasets are small, historical, and population-specific. Saved test scores do not establish clinical performance or generalization to other populations.
+=======
+# healthcare
+HealthAI is a Machine Learning project that predicts Breast Cancer, Heart Disease, and Diabetes using patient data. Built with Python and Streamlit, it provides an easy-to-use interface for disease prediction and model performance analysis.
+>>>>>>> b63314d44f94564d290c71ff622a5727eefff1fd
